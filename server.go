@@ -9,6 +9,6 @@ func main() {
 
 	r := gin.Default()
 	r.POST("/order", controller.OrderCreate)
-	r.POST("//identify", controller.OrderCreate)
-
+	r.POST("/identify", controller.OrderCreate)
+	r.Run()
 }
